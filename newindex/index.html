@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>inder</title>
+		<!----------------------css    start------------------------------------------------->
+		<link rel="stylesheet" type="text/css" href="css/fullcalendar/fullcalendar.css"> 
+		<link rel="stylesheet" type="text/css" href="css/fullcalendar/fancybox.css"> 
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/mycss.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+	    
+	   
+	    <link rel="stylesheet" href="css/lobipanel.min.css">
+	   <link rel="stylesheet" href="css/jquery-ui.min.css">
+	   <link rel="stylesheet" href="css/widgets.min.css">
+	   <link rel="stylesheet" href="css/separate/lobipanel.min.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    <!----------------------css   end------------------------------------------------->
+	    <!----------------------字体      start------------------------------------------------->
+	  	<link rel="stylesheet" href="fonts/fontawesome-webfont.eot" />
+	  	<link rel="stylesheet" href="fonts/fontawesome-webfont.svg" />
+	  	<link rel="stylesheet" href="fonts/fontawesome-webfont.ttf" />
+	  	<link rel="stylesheet" href="fonts/fontawesome-webfont.woff" />
+	  	<link rel="stylesheet" href="fonts/fontawesome-webfont.woff2" />
+	 	<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.eot"/>
+	 	<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.svg"/>
+	 	<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.woff"/>
+	 	<!--<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.woff2"/>-->
+	 	<link rel="stylesheet" href="fonts/glyphicons-halflings-regular.ttf"/>
+	 	<link rel="stylesheet" href="fonts/startui.eot"/>
+	 	<link rel="stylesheet" href="fonts/startui.svg"/>
+	 	<link rel="stylesheet" href="fonts/startui.ttf"/>
+	 	<link rel="stylesheet" href="fonts/startui.woff"/>
+	  	<!----------------------字体      end------------------------------------------------->
+	</head>
+	<body class="with-side-menu dark-theme">
+		<header class="site-header">
+	    <div class="container-fluid">
+	        <a href="#" class="site-logo-text">LOGO</a>
+	        <button class="hamburger hamburger--htla">
+	            <span>toggle menu</span>
+	        </button>
+	        <div class="site-header-content">
+	            <div class="site-header-content-in">
+	                <div class="site-header-shown">
+	                    <div class="dropdown dropdown-notification notif">
+	                        <a href="#" class="header-alarm dropdown-toggle active" id="dd-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                            <i class="font-icon-alarm"></i>
+	                        </a>
+	                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-notif" aria-labelledby="dd-notification">
+	                            <div class="dropdown-menu-notif-header">
+	                                Notifications
+	                                <span class="label label-pill label-danger">4</span>
+	                            </div>
+	                            <div class="dropdown-menu-notif-list">
+	                                <div class="dropdown-menu-notif-item">
+	                                    <div class="photo">
+	                                        <img src="img/photo-64-1.jpg" alt="">
+	                                    </div>
+	                                    <div class="dot"></div>
+	                                    <a href="#">Morgan</a> was bothering about something
+	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
+	                                </div>
+	                                <div class="dropdown-menu-notif-item">
+	                                    <div class="photo">
+	                                        <img src="img/photo-64-2.jpg" alt="">
+	                                    </div>
+	                                    <div class="dot"></div>
+	                                    <a href="#">Lioneli</a> had commented on this <a href="#">Super Important Thing</a>
+	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
+	                                </div>
+	                                <div class="dropdown-menu-notif-item">
+	                                    <div class="photo">
+	                                        <img src="img/photo-64-3.jpg" alt="">
+	                                    </div>
+	                                    <div class="dot"></div>
+	                                    <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
+	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
+	                                </div>
+	                                <div class="dropdown-menu-notif-item">
+	                                    <div class="photo">
+	                                        <img src="img/photo-64-4.jpg" alt="">
+	                                    </div>
+	                                    <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to see <a href="#">This Movie</a>
+	                                    <div class="color-blue-grey-lighter">7 hours ago</div>
+	                                </div>
+	                            </div>
+	                            <div class="dropdown-menu-notif-more">
+	                                <a href="#">See more</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	
+	                    <div class="dropdown user-menu">
+	                        <button class="dropdown-toggle" id="dd-user-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                            <img src="img/avatar-2-64.png" alt="">
+	                        </button>
+	                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
+	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>
+	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Settings</a>
+	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-question-sign"></span>Help</a>
+	                            <div class="dropdown-divider"></div>
+	                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-log-out"></span>Logout</a>
+	                        </div>
+	                    </div>
+	
+	                    <button type="button" class="burger-right">
+	                        <i class="font-icon-menu-addl"></i>
+	                    </button>
+	                </div><!--.site-header-shown-->
+	
+	                <div class="mobile-menu-right-overlay"></div>
+	                <div class="site-header-collapsed">
+	                    <div class="site-header-collapsed-in">
+	                        <div class="dropdown dropdown-typical">
+	                            <a class="dropdown-toggle" id="dd-header-sales" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                <span class="font-icon font-icon-wallet"></span>
+	                                <span class="lbl">Sales</span>
+	                            </a>
+	
+	                            <div class="dropdown-menu" aria-labelledby="dd-header-sales">
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+	                            </div>
+	                        </div>
+	                        <div class="dropdown dropdown-typical">
+	                            <a class="dropdown-toggle" id="dd-header-marketing" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                <span class="font-icon font-icon-cogwheel"></span>
+	                                <span class="lbl">Marketing automation</span>
+	                            </a>
+	
+	                            <div class="dropdown-menu" aria-labelledby="dd-header-marketing">
+	                                <a class="dropdown-item" href="#">Current Search</a>
+	                                <a class="dropdown-item" href="#">Search for Issues</a>
+	                                <div class="dropdown-divider"></div>
+	                                <div class="dropdown-header">Recent issues</div>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+	                                <div class="dropdown-more">
+	                                    <div class="dropdown-more-caption padding">more...</div>
+	                                    <div class="dropdown-more-sub">
+	                                        <div class="dropdown-more-sub-in">
+	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
+	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
+	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
+	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
+	                                            <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                                <div class="dropdown-divider"></div>
+	                                <a class="dropdown-item" href="#">Import Issues from CSV</a>
+	                                <div class="dropdown-divider"></div>
+	                                <div class="dropdown-header">Filters</div>
+	                                <a class="dropdown-item" href="#">My Open Issues</a>
+	                                <a class="dropdown-item" href="#">Reported by Me</a>
+	                                <div class="dropdown-divider"></div>
+	                                <a class="dropdown-item" href="#">Manage filters</a>
+	                                <div class="dropdown-divider"></div>
+	                                <div class="dropdown-header">Timesheet</div>
+	                                <a class="dropdown-item" href="#">Subscribtions</a>
+	                            </div>
+	                        </div>
+	                        <div class="dropdown dropdown-typical">
+	                            <a class="dropdown-toggle" id="dd-header-social" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                <span class="font-icon font-icon-share"></span>
+	                                <span class="lbl">Social media</span>
+	                            </a>
+	
+	                            <div class="dropdown-menu" aria-labelledby="dd-header-social">
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+	                            </div>
+	                        </div>
+	                        <div class="dropdown dropdown-typical">
+	                            <a href="#" class="dropdown-toggle no-arr">
+	                                <span class="font-icon font-icon-page"></span>
+	                                <span class="lbl">Projects</span>
+	                            </a>
+	                        </div>
+	                        <div class="dropdown dropdown-typical">
+	                            <a class="dropdown-toggle" id="dd-header-form-builder" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                <span class="font-icon font-icon-pencil"></span>
+	                                <span class="lbl">Form builder</span>
+	                            </a>
+	
+	                            <div class="dropdown-menu" aria-labelledby="dd-header-form-builder">
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
+	                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+	                            </div>
+	                        </div>
+	                        <div class="dropdown">
+	                            <button class="btn btn-rounded dropdown-toggle" id="dd-header-add" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                Add
+	                            </button>
+	                            <div class="dropdown-menu" aria-labelledby="dd-header-add">
+	                                <a class="dropdown-item" href="#">Quant and Verbal</a>
+	                                <a class="dropdown-item" href="#">Real Gmat Test</a>
+	                                <a class="dropdown-item" href="#">Prep Official App</a>
+	                                <a class="dropdown-item" href="#">CATprer Test</a>
+	                                <a class="dropdown-item" href="#">Third Party Test</a>
+	                            </div>
+	                        </div>
+	                        <div class="site-header-search-container">
+	                            <form class="site-header-search closed">
+	                                <input type="text" placeholder="Search">
+	                                <button type="submit">
+	                                    <span class="font-icon-search"></span>
+	                                </button>
+	                                <div class="overlay"></div>
+	                            </form>
+	                        </div>
+	                    </div><!--.site-header-collapsed-in-->
+	                </div><!--.site-header-collapsed-->
+	            </div><!--site-header-content-in-->
+	        </div><!--.site-header-content-->
+	    </div><!--.container-fluid-->
+	</header>
+	<!----------------------header      end------------------------------------------------->
+	<div class="" style="margin-top:80px ;">
+		<div class="container">
+			<div  style="height: 340px;">			
+				
+				<div class="row" style="height: 300px;">			
+					<div class="col-lg-8">
+					<!-------------banner start----------------------------------->
+						<div id="carousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							</ol>
+							
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+							    <div class="item active">
+							      <img src="img/banner3.jpg" alt="" >
+							    </div>
+							    <div class="item" >
+							      <img src="img/banner3.jpg" alt="">
+							      <div class="carousel-caption"></div>
+							    </div>
+							    <div class="item" >
+							      <img src="img/banner3.jpg" alt="">
+							      <div class="carousel-caption"></div>
+							    </div>
+							</div>
+							
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							</a>
+						</div>
+						<!-------------banner end----------------------------------->
+					</div>
+					<div class="col-lg-4 height" style="background-color: #fff;">	
+						<div class="overflow">	
+							<div class="title2">
+								<h5 class="press">通知公告</h5>
+								<a>更多</a>
+							</div>
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>		
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>		
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>
+							<p style="line-height: 30px;padding:0 10px;position: relative;">
+								<i class="dot" style="color: #999999;"></i>
+								<a href="#" style="color: #000000;">高等教育学生资助将“不留死角”</a>
+							</p>		
+						</div>
+					</div>								
+				</div>
+			</div>
+			
+			
+			
+			
+	        <div class="container-fluid">	       	
+		        <div class="row">
+		            <div class="col-xl-6 dahsboard-column">
+		                <section class="box-typical box-typical-dashboard panel panel-default scrollable">
+		                    <header class="box-typical-header panel-heading">
+		                        <h3 class="panel-title">Recent orders</h3>
+		                    </header>
+		                    <div class="box-typical-body panel-body">
+		                        <table class="tbl-typical">
+		                            <tr>
+		                                <th><div>Status</div></th>
+		                                <th><div>Clients</div></th>
+		                                <th align="center"><div>Orders#</div></th>
+		                                <th align="center"><div>Date</div></th>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-primary">Paid</span>
+		                                    <span class="label label-success">Active</span>
+		                                </td>
+		                                <td>John Doe</td>
+		                                <td align="center">3435362</td>
+		                                <td class="color-blue-grey" nowrap align="center"><span class="semibold">Today</span> 8:30</td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-primary">Paid</span>
+		                                    <span class="label label-success">Active</span>
+		                                </td>
+		                                <td>Thomas Bayer</td>
+		                                <td align="center">3435362</td>
+		                                <td class="color-blue-grey" nowrap align="center"><span class="semibold">Today</span> 16:30</td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-primary">Paid</span>
+		                                    <span class="label label-default">Inactive</span>
+		                                </td>
+		                                <td>Nicolas Karabat</td>
+		                                <td align="center">3435362</td>
+		                                <td class="color-blue-grey" nowrap align="center"><span class="semibold">Yesterday</span></td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-default">Unpaid</span>
+		                                    <span class="label label-default">Inactive</span>
+		                                </td>
+		                                <td>Alexandre Pome</td>
+		                                <td align="center">3435362</td>
+		                                <td class="color-blue-grey" nowrap align="center">23th May</td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-primary">Paid</span>
+		                                    <span class="label label-success">Active</span>
+		                                </td>
+		                                <td>John Doe</td>
+		                                <td align="center">3435362</td>
+		                                <td class="color-blue-grey" nowrap align="center"><span class="semibold">Today</span> 8:30</td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-primary">Paid</span>
+		                                    <span class="label label-success">Active</span>
+		                                </td>
+		                                <td>Thomas Bayer</td>
+		                                <td align="center">3435362</td>
+		                                <td class="color-blue-grey" nowrap align="center"><span class="semibold">Today</span> 16:30</td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-primary">Paid</span>
+		                                    <span class="label label-default">Inactive</span>
+		                                </td>
+		                                <td>Nicolas Karabat</td>
+		                                <td align="center">3435362</td>
+		                                <td class="color-blue-grey" nowrap align="center"><span class="semibold">Yesterday</span></td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-default">Unpaid</span>
+		                                    <span class="label label-default">Inactive</span>
+		                                </td>
+		                                <td>Alexandre Pome</td>
+		                                <td align="center">3435362</td>
+		                                <td class="color-blue-grey" nowrap align="center">23th May</td>
+		                            </tr>
+		                        </table>
+		                    </div><!--.box-typical-body-->
+		                </section><!--.box-typical-dashboard-->
+		                <section class="box-typical box-typical-dashboard panel panel-default scrollable">
+		                    <header class="box-typical-header panel-heading">
+		                        <h3 class="panel-title">Comments</h3>
+		                    </header>
+		                    <div class="box-typical-body panel-body">
+		                        <article class="comment-item">
+		                            <div class="user-card-row">
+		                                <div class="tbl-row">
+		                                    <div class="tbl-cell tbl-cell-photo">
+		                                        <a href="#">
+		                                            <img src="img/photo-64-1.jpg" alt="">
+		                                        </a>
+		                                    </div>
+		                                    <div class="tbl-cell">
+		                                        <span class="user-card-row-name"><a href="#">Matt McGill</a></span>
+		                                    </div>
+		                                    <div class="tbl-cell tbl-cell-date">
+		                                        <span class="semibold">Today</span>
+		                                        12:45
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="comment-item-txt">
+		                                <p>That’s a great idea! I’m sure we could start this project as soon as possible.</p>
+		                                <p>Let’s meet tomorow!</p>
+		                            </div>
+		                            <div class="comment-item-meta">
+		                                <a href="#" class="star">
+		                                    <i class="font-icon font-icon-star"></i>
+		                                </a>
+		                                <a href="#">
+		                                    <i class="font-icon font-icon-re"></i>
+		                                </a>
+		                                <!--Реализация кнопками-->
+		                                <!--<button type="button" class="star">-->
+		                                <!--<i class="font-icon font-icon-star"></i>-->
+		                                <!--</button>-->
+		                                <!--<button type="button">-->
+		                                <!--<i class="font-icon font-icon-re"></i>-->
+		                                <!--</button>-->
+		                            </div>
+		                        </article>
+		                        <article class="comment-item">
+		                            <div class="user-card-row">
+		                                <div class="tbl-row">
+		                                    <div class="tbl-cell tbl-cell-photo">
+		                                        <a href="#">
+		                                            <img src="img/photo-64-2.jpg" alt="">
+		                                        </a>
+		                                    </div>
+		                                    <div class="tbl-cell">
+		                                        <span class="user-card-row-name"><a href="#">Tim Collins</a></span>
+		                                    </div>
+		                                    <div class="tbl-cell tbl-cell-date">
+		                                        <span class="semibold">Today</span>
+		                                        12:45
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="comment-item-txt">
+		                                <p>That’s a great idea! I’m sure we could start this project as soon as possible.</p>
+		                                <p>Let’s meet tomorow!</p>
+		                            </div>
+		                            <div class="comment-item-meta">
+		                                <a href="#" class="star active">
+		                                    <i class="font-icon font-icon-star"></i>
+		                                </a>
+		                                <a href="#">
+		                                    <i class="font-icon font-icon-re"></i>
+		                                </a>
+		                                <!--Реализация кнопками-->
+		                                <!--<button type="button" class="star">-->
+		                                <!--<i class="font-icon font-icon-star"></i>-->
+		                                <!--</button>-->
+		                                <!--<button type="button">-->
+		                                <!--<i class="font-icon font-icon-re"></i>-->
+		                                <!--</button>-->
+		                            </div>
+		                        </article>
+		                    </div><!--.box-typical-body-->
+		                </section>
+		            </div><!--.col-->
+		            <div class="col-xl-6 dahsboard-column">
+		                <section class="box-typical box-typical-dashboard panel panel-default scrollable">
+		                    <header class="box-typical-header panel-heading">
+		                        <h3 class="panel-title">Recent tickets</h3>
+		                    </header>
+		                    <div class="box-typical-body panel-body">
+		                        <table class="tbl-typical">
+		                            <tr>
+		                                <th><div>Status</div></th>
+		                                <th><div>Subject</div></th>
+		                                <th align="center"><div>Department</div></th>
+		                                <th align="center"><div>Date</div></th>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-success">Open</span>
+		                                </td>
+		                                <td>Website down for one week</td>
+		                                <td align="center">Support</td>
+		                                <td nowrap align="center"><span class="semibold">Today</span> 8:30</td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-success">Open</span>
+		                                </td>
+		                                <td>Restoring default settings</td>
+		                                <td align="center">Support</td>
+		                                <td nowrap align="center"><span class="semibold">Today</span> 16:30</td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-warning">Progress</span>
+		                                </td>
+		                                <td>Loosing control on server</td>
+		                                <td align="center">Support</td>
+		                                <td nowrap align="center"><span class="semibold">Yesterday</span></td>
+		                            </tr>
+		                            <tr>
+		                                <td>
+		                                    <span class="label label-danger">Closed</span>
+		                                </td>
+		                                <td>Authorizations keys</td>
+		                                <td align="center">Support</td>
+		                                <td nowrap align="center">23th May</td>
+		                            </tr>
+		                        </table>
+		                    </div><!--.box-typical-body-->
+		                </section><!--.box-typical-dashboard-->
+		                <section class="box-typical box-typical-dashboard panel panel-default scrollable">
+		                    <header class="box-typical-header panel-heading">
+		                        <h3 class="panel-title">Contacts</h3>
+		                    </header>
+		                    <div class="box-typical-body panel-body">
+		                        <div class="contact-row-list">
+		                            <article class="contact-row">
+		                                <div class="user-card-row">
+		                                    <div class="tbl-row">
+		                                        <div class="tbl-cell tbl-cell-photo">
+		                                            <a href="#">
+		                                                <img src="img/photo-64-2.jpg" alt="">
+		                                            </a>
+		                                        </div>
+		                                        <div class="tbl-cell">
+		                                            <p class="user-card-row-name"><a href="#">Tim Collins</a></p>
+		                                            <p class="user-card-row-mail"><a href="#">timcolins@mail.com</a></p>
+		                                        </div>
+		                                        <div class="tbl-cell tbl-cell-status">Director at Tony’s</div>
+		                                    </div>
+		                                </div>
+		                            </article>
+		                            <article class="contact-row">
+		                                <div class="user-card-row">
+		                                    <div class="tbl-row">
+		                                        <div class="tbl-cell tbl-cell-photo">
+		                                            <a href="#">
+		                                                <img src="img/photo-64-1.jpg" alt="">
+		                                            </a>
+		                                        </div>
+		                                        <div class="tbl-cell">
+		                                            <p class="user-card-row-name"><a href="#">Maggy Smith</a></p>
+		                                            <p class="user-card-row-mail"><a href="#">maggysmith@mail.com</a></p>
+		                                        </div>
+		                                        <div class="tbl-cell tbl-cell-status">PR Manager</div>
+		                                    </div>
+		                                </div>
+		                            </article>
+		                            <article class="contact-row">
+		                                <div class="user-card-row">
+		                                    <div class="tbl-row">
+		                                        <div class="tbl-cell tbl-cell-photo">
+		                                            <a href="#">
+		                                                <img src="img/photo-64-3.jpg" alt="">
+		                                            </a>
+		                                        </div>
+		                                        <div class="tbl-cell">
+		                                            <p class="user-card-row-name"><a href="#">Molly Bridjet</a></p>
+		                                            <p class="user-card-row-mail"><a href="#">mollybr@mail.com</a></p>
+		                                        </div>
+		                                        <div class="tbl-cell tbl-cell-status">Assistan</div>
+		                                    </div>
+		                                </div>
+		                            </article>
+		                            <article class="contact-row">
+		                                <div class="user-card-row">
+		                                    <div class="tbl-row">
+		                                        <div class="tbl-cell tbl-cell-photo">
+		                                            <a href="#">
+		                                                <img src="img/photo-64-4.jpg" alt="">
+		                                            </a>
+		                                        </div>
+		                                        <div class="tbl-cell">
+		                                            <p class="user-card-row-name"><a href="#">Maggy Smith</a></p>
+		                                            <p class="user-card-row-mail"><a href="#">maggysmith@mail.com</a></p>
+		                                        </div>
+		                                        <div class="tbl-cell tbl-cell-status">PR Manager</div>
+		                                    </div>
+		                                </div>
+		                            </article>
+		                            <article class="contact-row">
+		                                <div class="user-card-row">
+		                                    <div class="tbl-row">
+		                                        <div class="tbl-cell tbl-cell-photo">
+		                                            <a href="#">
+		                                                <img src="img/photo-64-2.jpg" alt="">
+		                                            </a>
+		                                        </div>
+		                                        <div class="tbl-cell">
+		                                            <p class="user-card-row-name"><a href="#">Tim Collins</a></p>
+		                                            <p class="user-card-row-mail"><a href="#">timcolins@mail.com</a></p>
+		                                        </div>
+		                                        <div class="tbl-cell tbl-cell-status">Director at Tony’s</div>
+		                                    </div>
+		                                </div>
+		                            </article>
+		                            <article class="contact-row">
+		                                <div class="user-card-row">
+		                                    <div class="tbl-row">
+		                                        <div class="tbl-cell tbl-cell-photo">
+		                                            <a href="#">
+		                                                <img src="img/photo-64-1.jpg" alt="">
+		                                            </a>
+		                                        </div>
+		                                        <div class="tbl-cell">
+		                                            <p class="user-card-row-name"><a href="#">Maggy Smith</a></p>
+		                                            <p class="user-card-row-mail"><a href="#">maggysmith@mail.com</a></p>
+		                                        </div>
+		                                        <div class="tbl-cell tbl-cell-status">PR Manager</div>
+		                                    </div>
+		                                </div>
+		                            </article>
+		                            <article class="contact-row">
+		                                <div class="user-card-row">
+		                                    <div class="tbl-row">
+		                                        <div class="tbl-cell tbl-cell-photo">
+		                                            <a href="#">
+		                                                <img src="img/photo-64-3.jpg" alt="">
+		                                            </a>
+		                                        </div>
+		                                        <div class="tbl-cell">
+		                                            <p class="user-card-row-name"><a href="#">Molly Bridjet</a></p>
+		                                            <p class="user-card-row-mail"><a href="#">mollybr@mail.com</a></p>
+		                                        </div>
+		                                        <div class="tbl-cell tbl-cell-status">Assistan</div>
+		                                    </div>
+		                                </div>
+		                            </article>
+		                            <article class="contact-row">
+		                                <div class="user-card-row">
+		                                    <div class="tbl-row">
+		                                        <div class="tbl-cell tbl-cell-photo">
+		                                            <a href="#">
+		                                                <img src="img/photo-64-4.jpg" alt="">
+		                                            </a>
+		                                        </div>
+		                                        <div class="tbl-cell">
+		                                            <p class="user-card-row-name"><a href="#">Maggy Smith</a></p>
+		                                            <p class="user-card-row-mail"><a href="#">maggysmith@mail.com</a></p>
+		                                        </div>
+		                                        <div class="tbl-cell tbl-cell-status">PR Manager</div>
+		                                    </div>
+		                                </div>
+		                            </article>
+		                        </div>
+		                    </div><!--.box-typical-body-->
+		                </section><!--.box-typical-dashboard-->
+		            </div><!--.col-->
+		        </div>
+		    </div>
+	    </div><!--.container-fluid-->
+		</div>
+		<div class="friedlink">
+			<div class="container">
+				<div class="title1">			
+					<h2>友情链接</h2>							
+				</div>
+				<div class="friedlink-img">
+					<ul>
+						<li>
+							<a href="#" alt="" height="30px;" width="100px;">
+								<img src="img/bd_logo1.png" style="height: 50px;width: 100px;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="" height="30px;" width="100px;">
+								<img src="img/bd_logo1.png" style="height: 50px;width: 100px;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="" height="30px;" width="100px;">
+								<img src="img/bd_logo1.png" style="height: 50px;width: 100px;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="" height="30px;" width="100px;">
+								<img src="img/bd_logo1.png" style="height: 50px;width: 100px;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="" height="30px;" width="100px;">
+								<img src="img/bd_logo1.png" style="height: 50px;width: 100px;"/>
+							</a>
+						</li>
+						<li>
+							<a href="#" alt="" height="30px;" width="100px;">
+								<img src="img/bd_logo1.png" style="height: 50px;width: 100px;"/>
+							</a>
+						</li>					
+					</ul>							
+				</div>
+			</div>
+		<!---------------------------------友情链接  end--------------------------------->			
+		</div>
+	</div>
+		<!---------------------------------footer start--------------------------------->		    
+		<div class="footer-bg">
+			<div class="container">
+		
+			<div class="text" style="float: left;">				
+				<p>
+					<a href="#">关于我们</a>
+					<a href="#">帮助中心</a>
+				</p>          
+				<p>版权所有：湖北省教育资源公共服务平台</p>
+		        <p>武汉烽火信息集成技术有限公司 承建 鄂ICP备05010814号-3</p>			
+			</div>
+			<div class="QRcode pull-right">
+			<p><img src="http://www.hbeducloud.com/Public/static/commontopfoot/images/ewm.jpg" style="width: 100px;height: 100px;"></p>
+			<p>扫码关注微信公众平台</p>
+			</div>
+			</div>	
+		</div>
+		<!---------------------------------footer end--------------------------------->
+	
+		</div><!--.container-fluid-->
+	</div>
+	
+    
+    	
+    <!---------------------------------footer end--------------------------------->
+	
+	<script  type="text/javascript" src="js/jquery.min.js"></script>
+	<script  type="text/javascript" src="js/bootstrap.min.js" ></script>
+	<script  type="text/javascript" src="js/tether.min.js" ></script>	
+	<script  type="text/javascript" src="js/plugins.js" ></script>	
+	<script  type="text/javascript" src="js/app.js" ></script>
+	
+	<!----------------拖拽 js start--------------->
+	<script type="text/javascript" src='js/dashboard.js'></script>
+	<script type="text/javascript" src='js/layer.js'></script>
+	<script type="text/javascript">
+    	$(function(){
+    		$('.dashboard').dashboard({
+    			//height: 360,
+		        shadowType: 'normal',
+		        sensitive: false,
+		        circleShadowSize: 100,
+		        onFullScreen: function() {},
+		        onCollapse: function() {},
+		        onColor: function() {},
+		        onRemove: function() {}
+    		});
+    	})
+    	$('#widgetSelect').on('click', function(){
+			layer.open({
+			    type: 2,
+			    //skin: 'layui-layer-lan',
+			    title: 'layer弹层组件',
+			    fix: true,
+			    shadeClose: true,
+			    maxmin: true,
+			    area: ['1000px', '500px'],
+			    content:'tankuang.html', //'http://layer.layui.com/?form=local',
+			    end: function(){
+			      //layer.tips('试试相册模块？', '#photosDemo', {tips: 1})
+			    }
+			});
+		});    	
+    </script>
+    <!----------------拖拽 js end-------------->
+    <script type="text/javascript" src='js/slimscroll/jquery.slimscroll.js'></script>
+    <!----------------滚动条 js start--------------->
+	<script type="text/javascript">
+		$(function(){
+		    $('.inner-content-div').slimScroll({
+		        height: '365px'
+		    });
+		});
+		$(function(){
+		    $('.scroll_div').slimScroll({
+		        height: '407px'
+		    });
+		});
+	</script>	
+	<!----------------滚动条 js end--------------->
+	
+	<script src='js/jquery-ui.min.js'></script> 
+	<script src='js/fullcalendar/fullcalendar.min.js'></script> 
+	<script src='js/fullcalendar/jquery.fancybox-1.3.1.pack.js'></script> 
+	<script  type="text/javascript" src="js/app.js" ></script>
+	
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$('.panel').lobiPanel({
+				sortable: true
+			});
+			$('.panel').on('dragged.lobiPanel', function(ev, lobiPanel){
+				$('.dahsboard-column').matchHeight();
+			});
+
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+			function drawChart() {
+				var dataTable = new google.visualization.DataTable();
+				dataTable.addColumn('string', 'Day');
+				dataTable.addColumn('number', 'Values');
+				// A column for custom tooltip content
+				dataTable.addColumn({type: 'string', role: 'tooltip', 'p': {'html': true}});
+				dataTable.addRows([
+					['MON',  130, ' '],
+					['TUE',  130, '130'],
+					['WED',  180, '180'],
+					['THU',  175, '175'],
+					['FRI',  200, '200'],
+					['SAT',  170, '170'],
+					['SUN',  250, '250'],
+					['MON',  220, '220'],
+					['TUE',  220, ' ']
+				]);
+
+				var options = {
+					height: 314,
+					legend: 'none',
+					areaOpacity: 0.18,
+					axisTitlesPosition: 'out',
+					hAxis: {
+						title: '',
+						textStyle: {
+							color: '#fff',
+							fontName: 'Proxima Nova',
+							fontSize: 11,
+							bold: true,
+							italic: false
+						},
+						textPosition: 'out'
+					},
+					vAxis: {
+						minValue: 0,
+						textPosition: 'out',
+						textStyle: {
+							color: '#fff',
+							fontName: 'Proxima Nova',
+							fontSize: 11,
+							bold: true,
+							italic: false
+						},
+						baselineColor: '#16b4fc',
+						ticks: [0,25,50,75,100,125,150,175,200,225,250,275,300,325,350],
+						gridlines: {
+							color: '#1ba0fc',
+							count: 15
+						},
+					},
+					lineWidth: 2,
+					colors: ['#fff'],
+					curveType: 'function',
+					pointSize: 5,
+					pointShapeType: 'circle',
+					pointFillColor: '#f00',
+					backgroundColor: {
+						fill: '#008ffb',
+						strokeWidth: 0,
+					},
+					chartArea:{
+						left:0,
+						top:0,
+						width:'100%',
+						height:'100%'
+					},
+					fontSize: 11,
+					fontName: 'Proxima Nova',
+					tooltip: {
+						trigger: 'selection',
+						isHtml: true
+					}
+				};
+
+				var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+				chart.draw(dataTable, options);
+			}
+			$(window).resize(function(){
+				drawChart();
+				setTimeout(function(){
+				}, 1000);
+			});
+		});
+	</script>
+	</body>
+</html>

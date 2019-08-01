@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新闻</title>
+		<link rel="stylesheet" href="css/mycss.css"/>
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    <!----------------------datatables  css    start------------------------------------------------->
+	   	<link rel="stylesheet" href="css/datatables.min.css">
+	   
+	   <style>
+	   	.form-horizontal{
+	   		padding: 30px 0;
+	   	}
+		.form-horizontal>div{
+			width: 100%;
+		}
+	   </style>
+	</head>
+	<body>
+		<!------------------header  start------------------------->
+		<header class="header">
+			<div class="container">
+				<div style="color: #fff;font-size: 30px;float: left;">logo</div>
+				<div class="user-menu">
+					<ul>
+						<li>
+							<a href="#">退出</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="use_img" src="img/avatar-2-64.png" />
+								<span>用户姓名</span>
+							</a>
+						</li>
+						<li>欢迎您!!</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<nav id="top" class="navbar">
+		   	<div class="container">
+				 <div class="navbar-header">
+				    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+				    <a class="navbar-brand" href="#">logo</a>
+			    </div>
+			   <div class="navbar-collapse collapse" role="navigation">
+          			<ul class="nav navbar-nav">
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-home"></i>
+			            		我的首页
+			            	</a>
+			            </li>
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-tag"></i>
+			            		我的代办
+			            	</a>
+			            </li>
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-briefcase"></i>
+			            		我的消息
+			            	</a>
+			            </li>
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-comment"></i>
+			            		我的消息
+			            	</a>
+			            </li>			   
+			            <li class="dropdown hidden-sm hidden-md">
+					        <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			                		我是下拉菜单
+			                	<span class="glyphicon glyphicon-triangle-bottom"></span>
+			             	</a>
+			              	<ul class="dropdown-menu" aria-labelledby="drop2">
+				                <li><a href="#">Action</a></li>
+				                <li><a href="#">Another action</a></li>
+				                <li><a href="#">Something else here</a></li>
+				                <li role="separator" class="divider"></li>
+				                <li><a href="#">Separated link</a></li>
+				                <li role="separator" class="divider"></li>
+				                <li><a href="#">Action</a></li>
+				                <li><a href="#">Another action</a></li>
+				                <li><a href="#">Something else here</a></li>
+				            </ul>
+			            </li>
+			        </ul>
+			        <form class="navbar-form navbar-left hidden-sm hidden-md">
+			            <div class="form-group">
+			              <input type="text" class="form-control" placeholder="Search">
+			            </div>
+			            <button type="submit" class="btn btn-default"style="background-color:#0177b7;border: 0;"><i class="glyphicon glyphicon-search"></i></button>
+			        </form>
+			        <ul class="nav navbar-nav navbar-right hidden-sm">
+			            <li>
+			            	<a href="#)">登录</a>
+			            </li>			       
+			        </ul>
+		        </div>				
+			</div>
+		</nav>
+		<!-------------header  end---------------------------------->
+		<div class="container-fluid">
+			<div class="nav_side col-lg-2">
+	        	<div class="nav_sidebox">
+	        		<ul class="nav_side_list">
+				        <li class="index">
+				            <a href="#">
+				                <i class="font-icon font-icon-home"></i>
+				                <span class="lbl">系统管理首页</span>
+				            </a>
+				        </li>
+				       <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				        <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				         <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				         <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				       <li class="dropdown">
+				            <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+			                		我是下拉菜单
+			                	<span class="glyphicon glyphicon-triangle-bottom"></span>
+			             	</a>
+				            <div class="menu" aria-labelledby="dropdownMenu2">
+							    <a href="#">1111111</a>
+						  	</div>
+				        </li>
+				          <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				        <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				         <li class="dropdown">
+				            <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+			                		我是下拉菜单
+			                	<span class="glyphicon glyphicon-triangle-bottom"></span>
+			             	</a>
+				            <div class="menu" aria-labelledby="dropdownMenu2">
+							    <a href="#">1111111</a>
+						  	</div>
+						  	 <div class="menu" aria-labelledby="dropdownMenu2">
+							    <a href="#">1111111</a>
+						  	</div>
+						  	 <div class="menu" aria-labelledby="dropdownMenu2">
+							    <a href="#">1111111</a>
+						  	</div>
+						  	 <div class="menu" aria-labelledby="dropdownMenu2">
+							    <a href="#">1111111</a>
+						  	</div>
+				        </li>
+				         </li>
+				          <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				        <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				         </li>
+				          <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				        <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				        <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				        <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				         <li class="">
+				            <a href="#">				            
+				                <span class="lbl">用户管理</span>
+				            </a>
+				        </li>
+				    </ul>
+	        	</div>
+	    	</div>
+	    	<div class="col-lg-10">
+	    		<div class="box-typical box-typical-full-height p-a-lg">
+					<header class="section-header">
+						<div class="tbl">
+							<div class="tbl-row">
+								<div class="bigtitle" style="">
+									<h3><a href="#">新闻动态</a></h3>
+								</div>
+							</div>
+						</div>
+					</header>
+				
+					<!---------------------datatables_net   start--------------------------------------------------->
+					<button id="redraw">更换数据源</button>
+					<div class="text-right" style="line-height: 35px; margin-bottom: 20px;">
+						<form class="form-inline">
+							  <div class="form-group">
+							    <label for="" class="col-lg-4">输入关键字</label>
+							    <div class="col-lg-6">  <input type="text" class="form-control" id="" placeholder=""></div>							 
+							  </div>
+							 
+							  <button type="submit" class="btn btn-default">搜索</button>
+						</form>
+					</div>
+					<table id="newexample" class="display table table-striped table-bordered cell-boder text-center">
+						<thead>
+	        				<tr>
+	        					<th style="width:5%;text-align: center;">
+	        						<label>
+	        							<input type="checkbox" id="all" name="all">
+	        						</lable>
+	        					</th>
+	        					<th style="width: 5%;text-align: center;">序列</th>
+					            <th style="width: 40%;text-align: center;">新闻标题</th>	
+					             <th style="width: 20%;text-align: center;">发布人</th>			
+					            <th style="width: 20%;text-align: center;">发布时间</th>				     
+					            <th style="width: 10%;text-align: center;">操作</th>
+					        </tr>
+				        </thead>
+				        <tbody>
+				    	</tbody>
+				   </table>
+				   <div class="dt-buttons text-right m-t-lg">
+						
+						<button class="btn btn-danger add">添加新闻</button>
+						
+						<button class='btn btn-primary' style='margin-right:5px'>全部删除</button>
+						
+					</div>
+				</div>
+	    	</div>
+		</div>
+		<form class="form-horizontal" id="form" style="display: none;">			
+				<div class="container">
+					<div class="form-group">
+					   	<label for="" class="col-sm-2 control-label">新闻标题</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="" placeholder="">
+					    </div>
+					</div>
+					<div class="form-group">
+					   	<label for="" class="col-sm-2 control-label">新闻内容</label>
+					    <div class="col-sm-10">
+					      <textarea type="text" class="form-control" id="" style="height:200px;"></textarea>
+					    </div>
+					</div>
+					<div class="form-group">
+					   	<label for="" class="col-sm-2 control-label">发布时间</label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="" placeholder="">
+					    </div>
+					</div>
+					<div class="form-group" >		
+						<label for="" class="col-sm-2 control-label"></label>
+						<div class="col-sm-10">
+							<button type="submit" class="btn info">提交</button>
+							<button type="" class="btn btn-default">重写</button>
+						</div>							
+					</div>
+				</div>
+			</form>
+		
+			
+			
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<!----------------------datatables  js    start------------------------------------------------->
+		<script src="js/datatables.min.js"></script>
+		<!----------------------弹框 layer  js    start------------------------------------------------->
+		<script type="text/javascript" src="layer/layer.js"></script>
+		<script>
+		//初始化 
+		$.extend( $.fn.dataTable.defaults, {
+		 	searching: false,
+		 	pagingType: "full",
+//      	scrollX: true,
+//      	scrollY: false,
+		 	dom: "rt<'table-footer clearfix'<'DT-label col-xs-5'i><'DT-per-page col-xs-3'l><'DT-pagination col-xs-4'p>>",
+		 	orderMulti: false,
+        	order: [],
+			autoFill: true,//自动填充 
+    		//rowReorder: true,//拖拽行
+    		//colReorder: true,//拖拽列
+
+    		fixedHeader:true,
+			paging:true,//page
+			
+//			pageLength: 3,//每页显示几条数据
+			lengthMenu: [ 10, 20, 50, 100 ],//datatable分页功能初始化设置
+//				responsive: true,			
+//				select: {//选中有蓝色背景
+//					style: 'multi',
+//				}
+			language: {
+	            "sProcessing": "处理中...",
+	            "sLengthMenu": "显示 _MENU_ 项结果",
+	            "sZeroRecords": "没有符合条件的结果",
+	            "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+	            "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+	            "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+	
+	            "sInfoPostFix": "",
+	            "sSearch": "搜索:",
+	            "sUrl": "",
+	            "sEmptyTable": "没有符合条件的查询结果",
+	            "sLoadingRecords": "载入中...",
+	            "sInfoThousands": ",",
+	            "oPaginate": {
+	                "sFirst": "首页",
+	                "sPrevious": "上页",
+	                "sNext": "下页",
+	                "sLast": "末页"
+            	},
+            "oAria": {
+                "sSortAscending": ": 以升序排列此列",
+                "sSortDescending": ": 以降序排列此列"
+          		}
+			}
+		});	
+	
+		$(document).ready(function() {
+	 	//启动 
+        	var table = $('#newexample').DataTable( {	        
+				"data":dataSet,
+				"columns": [
+		           	{
+		                data:   "id",
+		                render: function (data) {		                   
+		                    return '<input type="checkbox" class="editor-active">';		             
+		                },
+		            },
+		            
+		            { data: 'num' },
+		            { 
+		            	data: 'title',
+		            	render: function (data) {
+		                   
+		                    return '<a href="#">'+data+'</a>';
+		                   
+		                    return data;
+		                },
+		            
+		            },
+		            { data: 'name' },
+		            { data: 'start_date' },
+		            
+	              	{
+		                data:   "btn",
+		                render: function (data) {		                   
+		                    return "<button  class='edit glyphicon glyphicon-pencil btn btn-primary' style='margin-right:5px'></button><button class='delete glyphicon glyphicon-remove btn' style='margin-right:5px'></button>";		                   
+		                },           
+		            }
+		        ],
+			  	"initComplete": function () {//td点击回调函数
+		            var api = this.api();
+		            api.$('td').click( function () {
+		            	//console.log(this.innerHTML)
+		                //api.search( this.innerHTML ).draw();
+		            } );
+		       },
+		     });   
+		     //前台添加序号
+			table.on('order.dt search.dt',function() {
+			    table.column(1).nodes().each(function(cell, i) {
+			        cell.innerHTML = i + 1;
+			    });
+			}).draw();
+			
+			
+        	$('#newexample tbody').on( 'click', 'button', function () {        
+	       	 	var data = table.row( $(this).parents('tr')).data();    
+	       	 
+	       		if ($(this).hasClass('edit')) {	       			
+			        alert(data["id"]+'编辑该条数据');//取值回调函数      
+	       		} else{
+	       			alert(data["id"]+'删除该条数据');//取值回调函数       		       				       				
+	       		};	       				     
+		    });
+		    //全选
+			 var all_checked = false;
+		    $(":checkbox").click(function() {
+		        var table = $(this).parents("table");
+		        if($(this).attr("id") === "all") {
+		            table.find(":checkbox").prop("checked", !all_checked);
+		            all_checked = !all_checked;
+		        }
+		        else {
+		            table.find(":checkbox[id!=all]").each(function (i) {
+		                if(!$(this).is(":checked")) {
+		                    table.find("#all").prop("checked", false);
+		                    all_checked = false;
+		                    return false;
+		                }
+		                $("#all").prop("checked", true);
+		                all_checked = true;
+		            });
+		        }
+		    });
+		}); 
+	  	 var dataSet = [
+            {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王一",
+	            "start_date": "2011/04/30",
+	            "btn":"",	     
+	        },
+           {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/24",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/25",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/22",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/25",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/25",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/25",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/25",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/25",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/25",
+	            "btn":"",	     
+	        },
+	        {
+	            "id":" ",
+	            "num":" ",
+	            "title":"高等教育学生资助将“不留死角",
+	            "name":"王2",
+	            "start_date": "2011/04/25",
+	            "btn":"",	     
+	        },
+               
+		];
+		//更换数据源（相同格式，但是数据内容不同）
+//		$("#redraw").click(function(){
+//		    var url = table.api().ajax.url("http://");
+//		    url.load();
+//		});
+		
+		//添加新闻弹框
+		 $(".add").click(function () {
+			        layer.open({
+			           type: 1,
+			           title:'请添加新的新闻',
+			           area: ['600px', '600px'], //宽高			    
+			            closeBtn: false,
+			            shift: 2,
+			            shadeClose: true,
+			            content: $("#form")
+			        });
+			})
+	</script>
+	</body>
+</html>

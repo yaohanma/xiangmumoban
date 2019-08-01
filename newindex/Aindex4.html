@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <link rel="stylesheet" href="css/mycss.css"/>
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    
+	     <link rel="stylesheet" href="css/jquery-ui.css">
+	</head>
+	<body>
+		<!------------------header  start------------------------->
+		<header class="navbar navbar-static-top bs-docs-nav" id="top" style="margin-bottom: 0;">
+			<div class="container">
+			   <nav class="nav">
+  					 <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand" href="#">logo</a>
+				    </div>
+				   <div class="navbar-collapse collapse" role="navigation">
+          			<ul class="nav navbar-nav">
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-home"></i>
+			            		我的首页
+			            	</a>
+			            </li>
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-tag"></i>
+			            		我的代办
+			            	</a>
+			            </li>
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-briefcase"></i>
+			            		我的消息
+			            	</a>
+			            </li>
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-comment"></i>
+			            		我的消息
+			            	</a>
+			            </li>
+			            <li class="hidden-sm hidden-md">
+			            	<a href="#">
+			            		<i class="glyphicon glyphicon-comment"></i>
+			            		我的消息
+			            	</a>
+			            </li>
+			            <li class="dropdown">
+					        <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			                		我是下拉菜单
+			                	<span class="glyphicon glyphicon-triangle-bottom"></span>
+			             	</a>
+			              	<ul class="dropdown-menu" aria-labelledby="drop2">
+				                <li><a href="#">Action</a></li>
+				                <li><a href="#">Another action</a></li>
+				                <li><a href="#">Something else here</a></li>
+				                <li role="separator" class="divider"></li>
+				                <li><a href="#">Separated link</a></li>
+				                <li role="separator" class="divider"></li>
+				                <li><a href="#">Action</a></li>
+				                <li><a href="#">Another action</a></li>
+				                <li><a href="#">Something else here</a></li>
+				            </ul>
+			            </li>
+			        </ul>
+			        <ul class="nav navbar-nav navbar-right hidden-sm">
+			            <li>
+			            	<a href="#)">登录</a>
+			            </li>
+			             <li>
+			            	<a href="#)">注册</a>
+			            </li>
+			          </ul>
+			        </div>
+				</nav>
+			</div>
+		</header>
+		<!-------------header  end---------------------------------->
+		<!-------------内容    start---------------------------------->
+		<div style="margin-top: 20px;">
+			<div class="container">
+				<div class="searchbox">
+					<form>
+						<div class="dropdown" style="float: left; line-height: 40px;margin-right: 5px;background: #f8f8f8">
+							<a id="drop2" href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			                		我是下拉菜单
+			                	<span class="glyphicon glyphicon-menu-down"></span>
+			             	</a>
+			             	<ul class="dropdown-menu" aria-labelledby="drop2">
+				                <li><a href="#">Action</a></li>
+				                <li><a href="#">Another action</a></li>			          
+				            </ul>
+			            </div>
+	                    <input name="keywords" id="keywords" value="" class="search-con" type="text" placeholder="">
+	                    <button value="" class="search-btn" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+				</div>
+				<div class="Modular">
+					<h2 class="room-h2"><p class="Rp pull-right">共查询到<n>61</n>条结果</p> <span></span>课程列表</h2>
+					<div class="sifting">
+						<input type="button" class="btn btn-default pull-right" value="指定区域或学校" onclick="teagroupbox();">
+						<b  style="float: left;">筛选：</b>
+						<div class="dropdown" style="float: left;">
+							<div>
+								<a id="drop2" href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="margin:0 10px;">
+			                		优课等级
+			                		<span class="glyphicon glyphicon-triangle-bottom"></span>
+			             		</a>
+								<ul class="dropdown-menu" aria-labelledby="drop2">
+					                <li><a href="#">优课等级n</a></li>
+					                <li><a href="#">Another action</a></li>
+					                <li><a href="#">Something else here</a></li>					              
+					                <li><a href="#">Separated link</a></li>					                
+					                <li><a href="#">Action</a></li>
+					                <li><a href="#">Another action</a></li>
+					                <li><a href="#">Something else here</a></li>
+					            </ul>
+							</div>
+						</div>
+						<input class="checkclass" type="checkbox" name="isrecord" value="1" onchange="isrecord(this);return false;"><label>仅查看有课堂实录</label>
+						<input class="checkclass" type="checkbox" name="iscourse" value="1" onchange="iscourse(this);return false;"><label>仅查看有课件</label> 
+					</div>
+				
+					<div class="sharelist">			
+						<div class="img-Left pull-left">
+							<a href="#"><img class="share-img" src="img/banner3.jpg"></a>
+							<div class="bottoBg">
+								XXXXXXX												
+							</div>
+						</div>
+						<div class="textbox">
+							<div class="score pull-right">								
+								<h3><a href="#" target="_blank">课时1:唱歌 爱的人间</a></h3>	
+								<span class="glyphicon glyphicon-heart"></span>
+								<p>课程作者：  苟祖泉</p>
+								<p>上传时间：  2017-04-12 14:48:53</p>
+								<p>所属学校：  建始县业州镇石桥湾小学</p>												
+							</div>
+						</div>						
+					</div>
+					<div class="sharelist">			
+						<div class="img-Left pull-left">
+							<a href="#"><img class="share-img" src="img/banner3.jpg"></a>
+							<div class="bottoBg">
+								XXXXXXX												
+							</div>
+						</div>
+						<div class="textbox">
+							<div class="score pull-right">								
+								<h3><a href="#" target="_blank">课时1:唱歌 爱的人间</a></h3>	
+								<span class="glyphicon glyphicon-heart"></span>
+								<p>课程作者：  苟祖泉</p>
+								<p>上传时间：  2017-04-12 14:48:53</p>
+								<p>所属学校：  建始县业州镇石桥湾小学</p>												
+							</div>
+						</div>						
+					</div>
+					<div class="sharelist">			
+						<div class="img-Left pull-left">
+							<a href="#"><img class="share-img" src="img/banner3.jpg"></a>
+							<div class="bottoBg">
+								XXXXXXX												
+							</div>
+						</div>
+						<div class="textbox">
+							<div class="score pull-right">								
+								<h3><a href="#" target="_blank">课时1:唱歌 爱的人间</a></h3>	
+								<span class="glyphicon glyphicon-heart"></span>
+								<p>课程作者：  苟祖泉</p>
+								<p>上传时间：  2017-04-12 14:48:53</p>
+								<p>所属学校：  建始县业州镇石桥湾小学</p>												
+							</div>
+						</div>						
+					</div>
+					<div class="sharelist">			
+						<div class="img-Left pull-left">
+							<a href="#"><img class="share-img" src="img/banner3.jpg"></a>
+							<div class="bottoBg">
+								XXXXXXX												
+							</div>
+						</div>
+						<div class="textbox">
+							<div class="score pull-right">								
+								<h3><a href="#" target="_blank">课时1:唱歌 爱的人间</a></h3>	
+								<span class="glyphicon glyphicon-heart"></span>
+								<p>课程作者：  苟祖泉</p>
+								<p>上传时间：  2017-04-12 14:48:53</p>
+								<p>所属学校：  建始县业州镇石桥湾小学</p>												
+							</div>
+						</div>						
+					</div>
+					<div class="sharelist">			
+						<div class="img-Left pull-left">
+							<a href="#"><img class="share-img" src="img/banner3.jpg"></a>
+							<div class="bottoBg">
+								XXXXXXX												
+							</div>
+						</div>
+						<div class="textbox">
+							<div class="score pull-right">								
+								<h3><a href="#" target="_blank">课时1:唱歌 爱的人间</a></h3>	
+								<span class="glyphicon glyphicon-heart"></span>
+								<p>课程作者：  苟祖泉</p>
+								<p>上传时间：  2017-04-12 14:48:53</p>
+								<p>所属学校：  建始县业州镇石桥湾小学</p>												
+							</div>
+						</div>						
+					</div>
+				</div>
+				
+				<nav aria-label="...">
+				  	<ul class="pagination">
+					    <li class="disabled">
+					      <span>
+					        <span aria-hidden="true"><<</span>
+					      </span>
+					    </li>
+					    <li class="active">
+					      <span>1 <span class="sr-only">(current)</span></span>
+					    </li>
+					    <li>
+					      <span>2 <span class="sr-only">(current)</span></span>
+					    </li>
+					    <li>
+					      <span>3 <span class="sr-only">(current)</span></span>
+					    </li>
+					    <li>
+					      <span>4 <span class="sr-only">(current)</span></span>
+					    </li>
+					   <li class="disabled">
+					      <span>
+					        <span aria-hidden="true">>></span>
+					      </span>
+					    </li>
+					</ul>
+				</nav>
+			</div>						
+		</div>
+		
+		<!-------------内容   end---------------------------------->
+		<!---------------------------------footer start--------------------------------->		    
+		<div class="footer-bg">
+			<div class="container">
+			<a class="logo" style="display: none;"><img src="http://www.hbeducloud.com/Public/static/commontopfoot/images/logo.png"></a>
+			<div class="text" style="float: left;">				
+				<p>
+					<a href="#">关于我们</a>
+					<a href="#">帮助中心</a>
+				</p>          
+			<p>版权所有：湖北省教育资源公共服务平台</p>
+		        <p>武汉烽火信息集成技术有限公司 承建 鄂ICP备05010814号-3</p>
+		        <p>运营支持：武汉烽火立云网络科技有限公司</p>
+			<p>地址：湖北省武汉市武昌区洪山路2号　邮编：430071</p>
+		
+			</div>
+			<div class="QRcode pull-right">
+				<p><img src="http://www.hbeducloud.com/Public/static/commontopfoot/images/ewm.jpg" width="70" height="70"></p>
+				<p>扫码关注微信公众平台</p>
+			</div>
+			</div>	
+		</div>
+		<!---------------------------------footer end--------------------------------->
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		
+		<script  type="text/javascript" src="js/jquery-ui.js" ></script>
+		<script>
+		$(function() {
+		    $( "#accordion" ).accordion();
+		});
+		</script>
+		
+	</body>
+</html>
